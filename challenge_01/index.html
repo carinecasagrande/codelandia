@@ -1,123 +1,112 @@
-:root {
-    --blue: #3EA1DB;
-    --blue-dark: #574AE8;
-    --white: #FFF;
-    --title: #313131;
-    --text: #B6B6B6;
-    --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-body {
-    font-family: 'Lexend Deca', sans-serif;
-    background: #F3F5F7;
-    color: var(--title);
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge #01</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lexend+Deca&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
 
-.content {
-    width: 900px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding: 1rem;
-}
+<body>
+    <nav class="nav">
+        <div class="content">
+            <div class="nav-header">
+                <p class="nav-header-title">
+                    Codelândia
+                </p>
+                <p class="nav-header-subtitle">
+                    blog
+                </p>
+            </div>
+            <div class="nav-search">
+                <input type="text" class="nav-search-input" placeholder="Pesquisar no blog" />
+                <i class="fas fa-search nav-search-icon"></i>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="content">
+            <div class="card">
+                <div class="card-info">
+                    <p class="card-info-date">
+                        02 de jul, 2021
+                    </p>
+                    <i class="far fa-heart card-info-icon"></i>
+                </div>
+                <div class="card-title">
+                    Agora é oficial: o Windows 11 está vindo
+                </div>
+                <div class="card-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae
+                    finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <p class="card-info-date">
+                        02 de jul, 2021
+                    </p>
+                    <i class="far fa-heart card-info-icon"></i>
+                </div>
+                <div class="card-title">
+                    Tim Berners-Lee vai leiloar código-fonte da web
+                </div>
+                <div class="card-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae
+                    finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor
+                    justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus
+                    nisl
+                    dui, cursus a lectus et, interdum ullamcorper libero.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <p class="card-info-date">
+                        02 de jul, 2021
+                    </p>
+                    <i class="far fa-heart card-info-icon"></i>
+                </div>
+                <div class="card-title">
+                    Tem Firefox novo no pedaço e você vai querer migrar
+                </div>
+                <div class="card-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <p class="card-info-date">
+                        02 de jul, 2021
+                    </p>
+                    <i class="far fa-heart card-info-icon"></i>
+                </div>
+                <div class="card-title">
+                    John McAfee, criador do antivírus McAfee, morre
+                </div>
+                <div class="card-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae
+                    finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor
+                    justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus
+                    nisl
+                    dui, cursus a lectus et, interdum ullamcorper libero.
+                </div>
+            </div>
+        </div>
+    </main>
 
-.nav {
-    background-image: var(--linear);
-    padding: 1rem;
-}
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/index.js"></script>
+</body>
 
-.nav-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 3rem;
-    color: var(--white);
-    font-size: 1.2rem;
-}
-
-.nav-header-title {
-    text-transform: capitalize;
-}
-
-.nav-header-subtitle {
-    text-transform: lowercase;
-}
-
-.nav-search {
-    position: relative;
-}
-
-.nav-search-input {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: var(--white);
-    font-family: 'Inter', sans-serif;
-    padding: 1rem 1rem 1rem 3rem;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.nav-search-input::placeholder {
-    color: var(--white);
-    opacity: 0.5;
-}
-
-.nav-search-input:focus-visible {
-    outline: none;
-}
-
-.nav-search-icon {
-    color: var(--white);
-    position: absolute;
-    left: 1rem;
-    font-size: 1.2rem;
-    top: 1rem;
-}
-
-.main {
-    margin-top: 3rem;
-}
-
-.card {
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
-    background-color: var(--white);
-    margin-bottom: 1.5rem;
-}
-
-.card-info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-    color: var(--text);
-}
-
-.card-info-icon {
-    color: var(--blue-dark);
-}
-
-.card-title {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-.card-content {
-    color: var(--text);
-    line-height: 1.4;
-}
-
-@media only screen and (max-width: 1024px) {
-    .content {
-        width: 100%;
-    }
-
-    .nav {
-        padding: 0;
-    }
-
-    .card {
-        padding: 1rem;
-    }
-
-    .main {
-        margin-top: 1.5rem;
-    }
-}
+</html>
